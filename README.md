@@ -1,6 +1,6 @@
 #Learn You Node
-__Skill Level:__ Intermediate
-__Time Limit:__ N/A
+__Skill Level:__ Intermediate  
+__Time Limit:__ N/A  
 
 This drill was created by [Rod Vagg](https://github.com/rvagg) and a number of other contributors for NodeSchool. It's a little more advanced but it's perfect for those who'd like to learn NodeJS and asynchronous programming. Enjoy!
 
