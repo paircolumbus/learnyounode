@@ -5,7 +5,7 @@ const server = http.createServer(function listener(req, res) {
     res.writeHead(200, { 'Content-Type': 'application/json' }) 
 
     const path = req.url.split("?")[0]
-    const key = req.url.split("?")[1].split("=")[0]
+    // const key = req.url.split("?")[1].split("=")[0]
     const value = req.url.split("=")[1]
 
     let output = ""
@@ -19,8 +19,10 @@ const server = http.createServer(function listener(req, res) {
         }))
     else if (path == "/api/unixtime")
         res.end(JSON.stringify({unixtime: date.getTime()}))
-    else 
+    else {
         res.writeHead(404)
+        res.end()
+    }
 })
 
 server.listen(port)
